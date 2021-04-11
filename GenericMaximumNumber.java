@@ -29,12 +29,15 @@ public class GenericMaximumNumber<E extends Comparable> {
     public static <E extends  Comparable> E getMax(E x, E y, E z) {
         if (x.compareTo(y) > 0) {
             if (x.compareTo(z) > 0) {
+                System.out.println("Maximum: " + x);
                 return x;
             }
         }
         if (y.compareTo(z) > 0) {
+            System.out.println("Maximum: " + y);
             return y;
         }
+        System.out.println("Maximum: " + z);
         return z;
     }
 }
